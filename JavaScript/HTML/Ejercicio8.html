@@ -1,0 +1,31 @@
+
+<!DOCTYPE>
+<html lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ejercicio 8 -Informaci&oacute;n sobre cadenas</title>
+<link rel="stylesheet" type="text/css" href="../CSS/styles1.css">
+
+<script type="text/javascript">
+function info(cadena){
+    var resultado = "La cadena \"" +cadena+"\" ";
+
+    //comprobar masyuculas
+    if(cadena == cadena.toUpperCase())
+     resultado += "esta formada solo por masyuculas";
+    else if (cadena == cadena.toLowerCase())
+      resultado += " esta formado solo por minusculas";
+     else 
+        resultado +="esta formado por mayusculas y minusculas";
+    return resultado;
+}
+
+alert(info("OVNI = OBJETO VOLADOR NO IDENTIFICADO"));
+alert(info("En un lugar de la mancha..."));
+alert(info("aprendiendo javasacript..."));
+</script>
+</head>
+<div class ="boton-volver">
+    <a href="../Index.html">Volver al menu</a>
+  </div>
+</html>
